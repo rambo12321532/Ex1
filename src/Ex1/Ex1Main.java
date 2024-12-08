@@ -1,4 +1,4 @@
-package assignments.ex1;
+package Ex1;
 import java.util.Scanner;
 
 /**
@@ -17,7 +17,6 @@ public class Ex1Main {
             num1 = sc.next();
             if (!num1.equals("quit")) {
                 // add your code here
-
                 /////////////////////
             }
         }

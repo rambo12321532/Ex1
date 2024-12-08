@@ -1,4 +1,7 @@
-package assignments.ex1;
+package Ex1;
+
+import javax.swing.*;
+
 /**
  * This class represents a simple solution for Ex1.
  * As defined here: https://docs.google.com/document/d/1AJ9wtnL1qdEs4DAKqBlO1bXCM6r6GJ_J/r/edit/edit
@@ -12,19 +15,18 @@ package assignments.ex1;
  * You should implement the following static functions:
  */
  class Ex1 {
-        /**
-         * Convert the given number (num) to a decimal representation (as int).
-         * It the given number is not in a valid format returns -1.
-         * @param num a String representing a number in basis [2,16]
-         * @return
-         */
-        public static int number2Int(String num) {
-            int ans = -1;
-            // add your code here
+    /**
+     * Convert the given number (num) to a decimal representation (as int).
+     * It the given number is not in a valid format returns -1.
+     *
+     * @param num a String representing a number in basis [2,16]
+     * @return
+     */
+    public static int number2Int(String num) {
+        if (num=null||!)
+        return -1;
 
-            ////////////////////
-            return ans;
-        }
+    }
         /**
          * This static function checks if the given String (g) is in a valid "number" format.
          * @param a a String representing a number
