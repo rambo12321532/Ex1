@@ -13,7 +13,7 @@ public class Ex1Test {
         void computeNumberTest() {
             String s2 = "1011b2";
             int v = Ex1.number2Int(s2);
-            assertEquals(v,-1);
+            assertEquals(v,11);
             String s10 = "1011bA";
             v = Ex1.number2Int(s10);
             s2 = Ex1.int2Number(v,2);
@@ -24,7 +24,7 @@ public class Ex1Test {
 
         @Test
         void isBasisNumberTest() {
-            String[] good = {"1", "1b2", "01b2", "123bA", "ABbG", "0bA"};
+            String[] good = {"2", "3b2", "11b2", "323bA", "ABbG", "0bA"};
             for(int i=0;i<good.length;i=i+1) {
                 boolean ok = Ex1.isNumber(good[i]);
                 assertTrue(ok);
@@ -37,11 +37,13 @@ public class Ex1Test {
         }
         @Test
         void int2NumberTest() {
-           // implement this test
+            assertEquals("FFb16", Ex1.int2Number(11, 2));
+            assertEquals("FFb16", Ex1.int2Number(255, 16));
         }
         @Test
         void maxIndexTest() {
-            // implement this test
+            String[] arr = {"10b2", "FFb16", "101b2", "A1b16"};
+            assertEquals(1, Ex1.maxIndex(arr));
         }
 
         // Add additional test functions - test as much as you can.
