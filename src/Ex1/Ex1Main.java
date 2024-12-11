@@ -17,30 +17,29 @@ public class Ex1Main {
             num1 = sc.next();
             if (num1.equals(quit)) break;
 
-            // Check if num1 is valid
+
             if (Ex1.isNumber(num1)) {
                 System.out.println("Valid input. Now pick another number.");
             } else {
                 System.out.println("ERR: num1 is in the wrong format! (" + num1 + ")");
-                continue; // Skip the rest of the loop
+                continue;
             }
 
-            // Get the second number
             System.out.println("Enter a string as number#2 (or \"quit\" to end the program): ");
             num2 = sc.next();
             if (num2.equals(quit)) break;
 
-            // Check if num2 is valid
+
             if (Ex1.isNumber(num2)) {
                 int num1Value = Ex1.number2Int(num1);
                 int num2Value = Ex1.number2Int(num2);
 
-                System.out.println("num1 = " + num1 + " is number: true, value: " + num1Value);
-                System.out.println("num2 = " + num2 + " is number: true, value: " + num2Value);
+                System.out.println("num1 = " + num1 + " : true, value: " + num1Value);
+                System.out.println("num2 = " + num2 + " : true, value: " + num2Value);
 
                 System.out.println("Enter a base for output: (a number [2,16]): ");
                 int base = sc.nextInt();
-                sc.nextLine(); // Consume newline character
+                sc.nextLine();
 
                 String sum = Ex1.int2Number(num1Value + num2Value, base);
                 String product = Ex1.int2Number(num1Value * num2Value, base);
