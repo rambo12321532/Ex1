@@ -39,16 +39,21 @@ public class Ex1Test {
     @Test
     void int2NumberTest() {
         assertEquals("FFbG", Ex1.int2Number(255, 16));
+        assertEquals("30b4",Ex1.int2Number(12,4));
+        assertEquals("1110b2",Ex1.int2Number(14,2));
     }
     @Test
     void equalsTest() {
 assertTrue(Ex1.equals("10011b2","19"));
 assertFalse(Ex1.equals("10011b2","5"));
+assertFalse(Ex1.equals("!","5"));
 }
         @Test
         void maxIndexTest() {
             String[] arr = {"101b2", "FFb16", "10b2", "Ab16"};
+            String[] arr2 ={"3","20","13","8"};
             assertEquals(0, Ex1.maxIndex(arr));
+            assertEquals(1,Ex1.maxIndex(arr2));
         }
 
     }
