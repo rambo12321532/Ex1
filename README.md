@@ -3,7 +3,7 @@ Ex1 - Number Formatting Converter and Calculator
 Overview
 
 This project involves converting, validating, and manipulating numbers in different bases (from binary to hexadecimal) and natural numbers. It supports operations on numbers represented as strings with the format <number><b><base>, such as 101b2, FFb16, or 123 (for natural numbers). The program provides methods to check if a number is valid, convert between different base representations, and perform calculations like addition and multiplication.
-
+.
 Files
 
 Ex1.java: Main logic of the program. It contains methods to convert, validate, and manipulate numbers.
